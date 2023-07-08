@@ -1,25 +1,26 @@
 @font-face {
     font-family: 'Ubuntu';
-    src: url(./assets/fonts/Ubuntu/Ubuntu-Regular.ttf);
+    src: url(./assets/fonts/Ubuntu/ubuntu-regular-webfont.woff);
+    src: url(./assets/fonts/Ubuntu/ubuntu-regular-webfont.woff2);
     font-weight: 400;
 }
 @font-face {
     font-family: 'Ubuntu';
-    src: url(./assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
+    src: url(./assets/fonts/Ubuntu/ubuntu-bold-webfont.woff);
+    src: url(./assets/fonts/Ubuntu/ubuntu-bold-webfont.woff2);
     font-weight: 700;
 }
-.wrapper-header {
+
+.header {
     display: flex;
-    justify-content: space-around;
-    max-width: 1924px;
-    max-height: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    max-width: 1350px;
+    padding: 10px 15px;
+    margin: 0 auto;
 }
 .logo {
     width: 150px;
     height: 80px;
-
 }
 .nav{
     display: flex;
@@ -28,37 +29,78 @@
 
 .nav-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0;
+    margin: 0;
 }
-.nav-link{
+.nav-item{
     margin-right: 50px;
-}
-.nav-list>li>p {
-    margin-right: 50px;
-     text-align: center;
-     font-size: 20px;
-     font-weight: bold;
+    list-style: none;
 }
 .nav-list:last-child{
     margin-right: 0;
 }
-.button-callback{
+.number-call{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button-orange{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    height: 55px;
     background-color: #FF7944;
     border-radius: 10rem;
-}
-.button-callback a{
     color: white;
     font-size: 14px;
     text-transform: uppercase;
+    height: 55px;
 }
-.button-callback:hover {
-    background-color: #FB68AC;
-    transition: 2s ease;
+.button-callback{
+    width: 220px;
+}
+.welcome {
+    background-color: #FFF7F5;
+  position: relative;
+}
+.welcome::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 962px;
+    height: 100%;
+    background: 50px/100% 100% no-repeat  url(./assets/img/flower-petal-welcome.png), url(./assets/img/ellipse-welcom.png) center bottom no-repeat;
+}
+.welcome *{
+    position: relative;
+    z-index: 2;
+}
+.you-mother{
+    font-size: 52px;
+    font-weight: bold;
+    color: #CA2728;
+}
+.wrapper-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    padding: 10px 15px 0 15px;
+    margin: 0 auto;
+}
+.mommy-baby{
+    max-width: 288px;
+    max-height: 529px;
+    margin-top: 71px;
+}
+.discount span {
+    font-weight: bold;
+}
+.discount{
+    font-size: 20px;
+}
+.button-cons {
+    width: 300px;
 }
