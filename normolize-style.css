@@ -84,9 +84,6 @@ address {
     line-height: inherit;
     margin-bottom: 1rem;
 }
-li {
-    list-style: none;
-}
 dt {
     font-weight: 700;
 }
