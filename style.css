@@ -63,9 +63,15 @@
     width: 220px;
 }
 .welcome {
+    background-image: url(./assets/img/fonewelcome.PNG);
+    background-repeat: no-repeat;
+    background-position: 45vw;
     background-color: #FFF7F5;
 }
-.pink-petals::before {
+.pink-petals{
+    
+}
+/*.pink-petals::before {
     content: '';
     display: block;
     position: absolute;
@@ -76,7 +82,8 @@
 }
 .wrapper-container *{
     position: relative;
-}
+}*/
+
 .you-mother{
     font-size: 52px;
     font-weight: bold;
@@ -87,7 +94,14 @@
 }
 .mommy-baby{
     margin-top: 71px;
-    margin-left: 365px;
+    margin-left: 11vw;
+}
+.wrapper-petals{
+    display: flex;
+    align-items: center;
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .discount span {
     font-weight: bold;
