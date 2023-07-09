@@ -11,12 +11,16 @@
     font-weight: 700;
 }
 
-.header {
+.wrapper-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1350px;
-    padding: 10px 15px;
+    padding: 0 15px;
     margin: 0 auto;
+}
+.header{
+    padding: 10px 0;
 }
 .logo {
     width: 150px;
@@ -70,7 +74,7 @@
     width: 962px;
     background: 65px/100% 100% no-repeat  url(./assets/img/flower-petal-welcome.png), url(./assets/img/ellipse-welcom.png) center bottom no-repeat;
 }
-.wrapper-welcome *{
+.wrapper-container *{
     position: relative;
 }
 .you-mother{
@@ -80,13 +84,6 @@
     margin: 0;
     padding-bottom: 30px;
     line-height: 1;
-}
-.wrapper-welcome {
-    display: flex;
-    align-items: center;
-    max-width: 1350px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 .mommy-baby{
     margin-top: 71px;
@@ -102,4 +99,36 @@
 }
 .button-cons {
     width: 300px;
+}
+.metod-eko{
+    margin-top: 100px;
+}
+.diagram{
+    display: flex;
+    align-items: center;
+    max-width: 660px;
+    background-color: #F3F5FF;
+}
+.persent{
+    width: 156px;
+    height: 156px;
+    margin: 36px 30px;
+}
+.metod{
+    max-width: 660px;
+}
+.result{
+    max-width: 414px;
+    align-items: center;
+    padding-right: 30px;
+    color: #1E266D;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.result :first-child{
+    padding-bottom: 30px;
+}
+.result div {
+    text-align: center;
 }
