@@ -68,9 +68,6 @@
     background-position: 45vw;
     background-color: #FFF7F5;
 }
-.pink-petals{
-    
-}
 /*.pink-petals::before {
     content: '';
     display: block;
@@ -125,9 +122,17 @@
     background-color: #F3F5FF;
 }
 .persent{
+    display: inline-block;
     width: 156px;
     height: 156px;
     margin: 36px 30px;
+    background: url(./assets/img/Group\ 12.svg) no-repeat;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #1E266D;
+    padding-top: 61px;
+    padding-bottom: 61px;
 }
 .metod{
     max-width: 660px;
@@ -152,15 +157,16 @@
     justify-content: center;
     font-size: 36px;
     font-weight: bold;
+    max-width: 100%;
 }
 .steps{
-    display: grid;
-    align-items: center;
-    max-width: 1310px;
-    grid-template-columns: repeat(8, auto);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1350px;
     column-gap: 30px;
     row-gap: 100px;
-    margin-top: 20px;
+    padding-top: 80px;
 }
 .step-number-dots{
     display: flex;
@@ -186,11 +192,98 @@
 }
 .step-number-text{
     max-width: 192px;
-    text-align: center;
     font-size: 18px;
     text-transform: uppercase;
 }
+.step-dotes-9{
+    background: no-repeat url(./assets/img/step9.svg);
+}
+.step-border-9{
+    background-color: #FF7944;
+    color: #FFF;
+}
+/*.arrow{
+    display: inline-flex;
+    position: absolute;
+}
+.arrow1, .arrow2 {
+    top:20px;
+}
+.arrow1, .arrow3 {
+    left: 81px;
+}
+.arrow2, .arrow5 {
+    left: 770px;
+}
+.arrow3, .arrow5 {
+    top: 225px;
+}
+.arrow4{
+    top: 180px;
+    left: 425px;
+}
+*/
 .arrow{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    align-items: center;
+}
+.arrow:before{
+    position: absolute;
+    content: '';
+    width: 277px;
+    top: 20px;
+    bottom: 50px;
+    background-image: url(./assets/img/arrow.svg);
+    background-repeat: no-repeat;
+}
+.arrow1:before, .arrow3:before {
+    left: 81px;
+}
+.arrow2:before, .arrow5:before {
+    left: 770px;
+}
+.arrow3:before, .arrow5:before {
+    top: 225px;
+}
+.arrow4:before{
+    top: 180px;
+    left: 425px;
+    background: no-repeat url(./assets/img/arrow-bot.svg);
+}
+.arrow6:before{
+    top: 368px;
+    height: 52px;
+    left: 425px;
+    background: no-repeat url(./assets/img/arrow-bot.svg);
+}
+.step-9-bgr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF7F5;
+    max-height: 228px;
+    margin-top: 150px;
+}
+.step-9{
+    display: inline-flex;
+    align-items: center;
+}
+.step9-text{
+    font-size: 36px;
+    font-weight: bold;
+    color: #CA2728;
+    padding-left: 30px;
     
-    column-gap: 100px;
+}
+.photo-women{
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+.arrow9::before{
+    background: no-repeat url(./assets/img/arrow9.svg);
+    
+    width: 467px;
 }
