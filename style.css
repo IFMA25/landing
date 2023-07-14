@@ -155,14 +155,16 @@
 .nine-steps{
     flex-direction: column;
     justify-content: center;
+
+    max-width: 100%;
+}
+.nine-steps-text{
     font-size: 36px;
     font-weight: bold;
-    max-width: 100%;
 }
 .steps{
     display: flex;
     flex-wrap: wrap;
-    position: relative;
     max-width: 1350px;
     column-gap: 30px;
     row-gap: 100px;
@@ -196,7 +198,8 @@
     text-transform: uppercase;
 }
 .step-dotes-9{
-    background: no-repeat url(./assets/img/step9.svg);
+    background: no-repeat url(./assets/img/dotes-step9.png);
+    background-size: contain;
 }
 .step-border-9{
     background-color: #FF7944;
@@ -226,6 +229,7 @@
 .arrow{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     column-gap: 30px;
     align-items: center;
 }
@@ -233,42 +237,35 @@
     position: absolute;
     content: '';
     width: 277px;
-    top: 20px;
-    bottom: 50px;
+    height: 50px;
     background-image: url(./assets/img/arrow.svg);
     background-repeat: no-repeat;
 }
-.arrow1:before, .arrow3:before {
-    left: 81px;
+.arrow1:before, .arrow2:before, .arrow3:before, .arrow5:before  {
+    top: -50px;
+    left: 80px;
 }
-.arrow2:before, .arrow5:before {
-    left: 770px;
-}
-.arrow3:before, .arrow5:before {
-    top: 225px;
-}
-.arrow4:before{
-    top: 180px;
-    left: 425px;
+.arrow4:before, .arrow6:before{
+    height: 55px;
+    top: 90px;
+    left: 90px;
     background: no-repeat url(./assets/img/arrow-bot.svg);
 }
-.arrow6:before{
-    top: 368px;
-    height: 52px;
-    left: 425px;
-    background: no-repeat url(./assets/img/arrow-bot.svg);
+.arrow9::before{
+    background: no-repeat url(./assets/img/arrow9.svg);
+    width: 467px;
+    height: 276px;
+    left: -400px;
+    top: 40px;
 }
-.step-9-bgr{
+.step-9{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #FFF7F5;
     max-height: 228px;
     margin-top: 150px;
-}
-.step-9{
-    display: inline-flex;
-    align-items: center;
+    margin-bottom: 70px;
 }
 .step9-text{
     font-size: 36px;
@@ -282,8 +279,54 @@
     padding-right: 80px;
     padding-left: 80px;
 }
-.arrow9::before{
-    background: no-repeat url(./assets/img/arrow9.svg);
+.clinic{
+    display: block;
+}
+.about-clinic{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.about-arteko{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 657px;
+    padding-right: 33px;
+    padding-bottom: 60px;
+}
+.about-title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.about-us{
     
-    width: 467px;
+    font-size: 16px;
+}
+.photo-petal-women{
+    max-width: 660px;
+}
+.statistics{
+    display: flex;
+    justify-content: space-between;
+}
+.block-stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+}
+.numer-stat{
+    font-size: 36px;
+    line-height: 2;
+    font-weight: bold;
+    color: #FF7944;
+}
+.text-stat{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E266D;
+    text-align: center;
+    margin: 0 90px;
 }
