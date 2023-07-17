@@ -328,5 +328,8 @@
     font-weight: bold;
     color: #1E266D;
     text-align: center;
-    margin: 0 90px;
+    margin: 0 81px;
+}
+.quote{
+    background: linear-gradient(to right, #F3F5FF 49%, 0%, #FFF 51%);
 }
