@@ -464,6 +464,7 @@
     background-color: #FAF9FA;
 }
 
+
 .button-question{
     width: 41%;
 }
@@ -475,4 +476,120 @@
     font-size: 16px;
     line-height: 18px;
     padding: 18px 51px;
+}
+.review-conteiner{
+    display: block;
+}
+.titel-review{
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.5;
+    margin: 0 0 25px;
+}
+.block-review{
+    display: flex;
+    padding-bottom: 75px;
+}
+.review{
+    width: 33.33%;
+    margin-right: 30px;
+    margin-top: 88px;
+}
+.review2{
+    background-image: url(./assets/img/dropped-black-brush-pictures-15.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+.review3{
+    margin-right: 0;
+}
+.review3 .text-review{
+    margin-bottom: 30px;
+}
+.read {
+    color: #FF7944;
+    border-bottom: 1px solid #FF7944;
+    cursor: pointer;
+}
+.text-review{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    line-height: 1.5;
+    margin: 0 0 54px;
+}
+.name-review{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.insta-clinic{
+    display: block;
+    text-align: center;
+
+}
+.insta-clinic img{
+    max-width: 30px;
+    max-height: 30px;
+}
+.insta-name{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: #FF7944;
+    padding-left: 15px;
+}
+.qoets-right{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+.arrow-review{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.arrow-ring{
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.arrow-left{
+    background: url(./assets/img/arrow-left.svg) no-repeat center center, #FFF7F5;
+}
+.arrow-right{
+    background: url(./assets/img/arrow-right.svg) no-repeat center center, #FFF7F5;
+}
+.dotes-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    align-items: center;
+}
+.dotes1{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 100%;
+    background-color: #FF7944;
+}
+.dotes2, .dotes3{
+    width: 13px;
+    height: 13px;
+    border: none;
+    border-radius: 100%;
+    background-color: #000000;
+    opacity: 20%;
 }
