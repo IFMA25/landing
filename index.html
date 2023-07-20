@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ART-EKO</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slick.css">
     <link rel="stylesheet" href="./normolize-style.css">
     <link rel="icon" href="./assets/img/favicon.ico">
 </head>
@@ -240,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="arrow-review">
+<!--             <div class="arrow-review">
                     <div class="arrow-ring arrow-left"></div>
                     <div class="dotes-list">
                         <div class="dotes dotes1"></div>
@@ -249,6 +250,7 @@
                     </div>
                     <div class="arrow-ring arrow-right"></div>
                 </div>
+-->
             </section>
             <section class="doctor-container wrapper-container">
                 <div class="title-conteiner">
@@ -361,6 +363,7 @@
 
                     </div>
                 </div>
+<!--
                 <div class="arrow-review">
                     <div class="arrow-ring arrow-left"></div>
                     <div class="dotes-list">
@@ -369,6 +372,7 @@
                     </div>
                     <div class="arrow-ring arrow-right"></div>
                 </div>
+-->
             </section>
             <section class="wrapper-container our-services">
                 <div class="title-conteiner">Наши услуги</div>
@@ -425,9 +429,41 @@
                     </div>
                 </div>
             </section>
+            <section class="signup-for-consultation">
+                <div class="signup-container wrapper-container">
+                    <div class="photo-director-bgr">
+                        <img src="./assets/img/director-bgr.png" alt="signup-photo-director">
+                    </div>
+                    <div class="signup-form">
+                        <div class="signup-titel">
+                            Записаться на <br> консультацию к главному <br> врачу/директору <br> клиники
+                        </div>
+                        <div class="form-row">
+                            <input type="text" class="form-entry" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" class="form-entry" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Телефон" required>
+                        </div>
+                        <div class="check-form-question">
+                            <div class="agree-form">
+                            <label class="check-agree">
+                                <input type="checkbox" class="form-agree-check" checked>
+                                <span class="label-form-agree"> Нажимая "Отправить", вы даете согласие на <a href="#"> обработку своих персональных данных </a> </span>
+                            </label>
+                            </div>
+                            <div class="button-question">
+                            <button class="button-orange btn-question">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
         <footer></footer>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./assets/JS/slick.js"></script>
+<script src="./assets/JS/common.js"></script>
 </body>
 </html>

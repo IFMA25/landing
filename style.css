@@ -12,6 +12,7 @@
     font-weight: 700;
     font-style: bold;
 }
+
 *{
     box-sizing: border-box;
 }
@@ -509,13 +510,13 @@
     margin: 0 0 106px;
 }
 .block-review{
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
     padding-bottom: 75px;
     margin-right: -30px;
 }
 .review{
-    width: calc (33.33% - 30px);
+   /* width: calc(33.33% - 30px);*/
     margin-right: 30px;
     margin-bottom: 80px;
 }
@@ -563,7 +564,7 @@
     justify-content: flex-end;
     padding-bottom: 50px;
 }
-.arrow-review{
+/*.arrow-review{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -601,7 +602,7 @@
     border-radius: 100%;
     background-color: #000000;
     opacity: 20%;
-}
+}*/
 .doctor-container{
     display: block;
     padding-bottom: 80px;
@@ -616,8 +617,8 @@
     margin: 0 0 50px 0;
 }
 .slider-doctor{
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
     margin-right: -30px;
 }
 
@@ -720,4 +721,12 @@
 .button-blue{
     padding: 13px 60px;
     background-color: #1E266D;
+}
+.signup-for-consultation{
+    background-image: linear-gradient(rgb(255, 255, 255, 0.7) 0%, rgb(251, 227, 255, 0.6999) 100%);
+    
+    /*background: linear-gradient(180deg, #FFF 0%, #FBE3FF69 100%);*/
+}
+.photo-director-bgr{
+    background-image: linear-gradient(#FFFFFF00 20%, #FDF1FF 100%)
 }
