@@ -746,14 +746,14 @@
     font-size: 0;
     padding: 0 0 29px 0;
 }
-.slick-dots li :first-child {
+.slick-dots button {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.20);
     width: 13px;
     height: 13px;
     border: none;
 }
-li.slick-active {
+li.slick-active button {
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -776,4 +776,7 @@ li.slick-active {
 .slick-next{
     background: url(./assets/img/arrow-right.svg) no-repeat center, #FFF7F5;
     right: 0;
+}
+.slick-arrow:hover{
+    box-shadow: 5px 5px 5px rgb(248, 208, 193, 0.5);
 }
