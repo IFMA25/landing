@@ -730,3 +730,50 @@
 .photo-director-bgr{
     background-image: linear-gradient(#FFFFFF00 20%, #FDF1FF 100%)
 }
+.slick-slider{
+    position: relative;
+}
+.slick-dots{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    font-size: 0;
+    padding: 0 0 29px 0;
+}
+.slick-dots li :first-child {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.20);
+    width: 13px;
+    height: 13px;
+    border: none;
+}
+li.slick-active {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #FF7944;
+}
+.slick-arrow{
+    position: absolute;
+    bottom: 0;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.slick-prev{
+    background: url(./assets/img/arrow-left.svg) no-repeat center, #FFF7F5;
+    left: 0;
+}
+.slick-next{
+    background: url(./assets/img/arrow-right.svg) no-repeat center, #FFF7F5;
+    right: 0;
+}
