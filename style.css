@@ -83,28 +83,15 @@
     border: none;
 }
 .welcome {
-    background-color: #FFF7F5;
+    background: url(./assets/img/flower-petal-welcome.png) no-repeat center left 120%, url(./assets/img/Ellipse.svg) bottom left 80%  no-repeat , #FFF7F5;
 }
-/*.pink-petals::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 962px;
-    background: 65px/100% 100% no-repeat  url(./assets/img/flower-petal-welcome.png), url(./assets/img/ellipse-welcom.png) center bottom no-repeat;
-}
-.wrapper-container *{
-    position: relative;
-}*/
 .be-mommy{
-    max-width: 662px;
+    width: 49.111111111%;
     padding-top: 173px;
     padding-bottom: 172px;
-    padding-right: 90px;
 }
 .you-mother{
-    font-size: 52px;
+    font-size: 50.888888888889px;
     font-weight: bold;
     color: #CA2728;
     margin: 0;
@@ -113,21 +100,13 @@
     letter-spacing: 0;
 }
 .mommy-baby{
-    position: absolute;
-    width: 1050px;
-    background-image: url(./assets/img/fonewelcome.PNG);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    width: 57.5%;
+    text-align: end;
     padding-top: 71px;
-    padding-left: 306px;
-    padding-right: 447px;
-    top: 0;
-    left: 50%;
+    padding-right: 130px;
 }
 
-
 .wrapper-petals{
-    position: relative;
     display: flex;
     align-items: center;
     max-width: 1350px;
@@ -339,7 +318,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    max-width: 648px;
+    width: 48.44444444%;
     padding-bottom: 90px;
 }
 .about-title{
@@ -356,7 +335,7 @@
     letter-spacing: 0.32px;
 }
 .photo-petal-women{
-    max-width: 660px;
+    width: 51.555555556%;
     padding-left: 30px;
 }
 .statistics{
@@ -500,7 +479,7 @@
     background-color: #FAF9FA;
 }
 .label-form-agree::after{
-    display: block;
+    display: none;
     position: absolute;
     content: '\2713';
     top: 0;
@@ -516,7 +495,7 @@
     color: #FF7944;
 }
 .form-agree-check:checked + .label-form-agree::after{
-    display: none;
+    display: block;
 }
 .button-question{
     width: 41%;
@@ -775,14 +754,17 @@
     background-color: #1E266D;
 }
 .signup-container{
+    display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 213px 150px;
 }
 .signup-for-consultation{
     background-image: linear-gradient(rgb(255, 255, 255, 0.7) 0%, rgb(251, 227, 255, 0.7) 100%);
 }
 .signup-form{
-    max-width: 485px;
+    width: 61.54%;
+    padding-left: 99px;
 }
 .signup-titel {
     font-size: 36px;
@@ -805,7 +787,9 @@
     background-color: #FFF;
 }
 .photo-director-bgr{
-    margin: 12px 99px 150px 0;
+    width: 38.42105263157895%;
+    padding-top: 12px;
+
 }
 .slick-slider{
     position: relative;
@@ -822,13 +806,16 @@
     column-gap: 15px;
     font-size: 0;
     padding: 0 0 29px 0;
+    
 }
 .slick-dots button {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.20);
     width: 13px;
     height: 13px;
+    padding: 4px;
     border: none;
+    transition: all 0s ease;
 }
 li.slick-active button {
     border-radius: 50%;
