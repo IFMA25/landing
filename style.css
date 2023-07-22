@@ -754,14 +754,17 @@
     background-color: #1E266D;
 }
 .signup-container{
+    display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 213px 150px;
 }
 .signup-for-consultation{
     background-image: linear-gradient(rgb(255, 255, 255, 0.7) 0%, rgb(251, 227, 255, 0.7) 100%);
 }
 .signup-form{
-    max-width: 485px;
+    width: 61.54%;
+    padding-left: 99px;
 }
 .signup-titel {
     font-size: 36px;
@@ -784,7 +787,9 @@
     background-color: #FFF;
 }
 .photo-director-bgr{
-    margin: 12px 99px 150px 0;
+    width: 38.42105263157895%;
+    padding-top: 12px;
+
 }
 .slick-slider{
     position: relative;
