@@ -796,12 +796,12 @@
 }
 .slick-dots{
     display: flex;
-    list-style: none;
     justify-content: center;
-    align-items: center;
+    list-style: none;
     position: absolute;
+    right: 0;
+    left: 0;
     bottom: 0;
-    right: 50%;
     flex-wrap: wrap;
     column-gap: 15px;
     font-size: 0;
@@ -809,20 +809,16 @@
     
 }
 .slick-dots button {
+    padding: 7px;
+    transition: all 0s ease;
+    border: 3px solid white;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.20);
-    width: 13px;
-    height: 13px;
-    padding: 4px;
-    border: none;
-    transition: all 0s ease;
 }
 li.slick-active button {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    border: none;
+    border: 3px solid #FF7944;
     background-color: #FF7944;
+    border-radius: 50%;
 }
 .slick-arrow{
     position: absolute;
@@ -832,6 +828,7 @@ li.slick-active button {
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    z-index: 1;
 }
 .slick-prev{
     background: url(./assets/img/arrow-left.svg) no-repeat center, #FFF7F5;
