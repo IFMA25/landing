@@ -28,8 +28,11 @@
     box-sizing: border-box;
 }
 .wrapper-bgr{
-    
-    background: url(./assets/img/flower-petal-welcome.png) no-repeat center left 120%, url(./assets/img/Ellipse.svg) bottom left 80%  no-repeat;
+    background-image: url(./assets/img/welcome-bgr.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 460px);
+    background-size: contain;
+
 }
 
 .wrapper-container {
@@ -41,7 +44,8 @@
     margin: 0 auto;
 }
 .header{
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .logo {
     width: 150px;
@@ -95,12 +99,12 @@
 }
 
 .be-mommy{
-    width: 49.111111111%;
+    width: 42.44444444444444%;
     padding-top: 173px;
     padding-bottom: 172px;
 }
 .you-mother{
-    font-size: 50.888888888889px;
+    font-size: 50px;
     font-weight: bold;
     color: #CA2728;
     margin: 0;
@@ -108,12 +112,7 @@
     line-height: 60px;
     letter-spacing: 0;
 }
-.mommy-baby{
-    width: 57.5%;
-    text-align: end;
-    padding-top: 71px;
-    padding-right: 130px;
-}
+
 
 .wrapper-petals{
     display: flex;
@@ -764,16 +763,16 @@
 }
 .signup-container{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 213px 150px;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 150px;
 }
 .signup-for-consultation{
     background-image: linear-gradient(rgb(255, 255, 255, 0.7) 0%, rgb(251, 227, 255, 0.7) 100%);
 }
 .signup-form{
-    width: 61.54%;
-    padding-left: 99px;
+    width: 51.05263157894737%;
+    margin-left: 99px;
 }
 .signup-titel {
     font-size: 36px;
@@ -865,17 +864,8 @@ footer{
 .nav-footer a{
     color: #FFFFFF;
 }
-@media (min-width: 1450px) {
-    .wrapper-bgr{
-        max-width: 1800px;
-        margin: 0 auto;
-        background: url(./assets/img/flower-petal-welcome.png) no-repeat center left 110%, url(./assets/img/Ellipse.svg) bottom left 78% no-repeat;
-    }
-}
-@media  (max-width: 1449px) {
-    .wrapper-bgr{
-        max-width: 1450px;
-        margin: 0 auto;
-        background: url(./assets/img/flower-petal-welcome.png) no-repeat center left 120%, url(./assets/img/Ellipse.svg) bottom left 80% no-repeat;
+@media (min-width:1070px) {
+    .wrapper-container{
+       
     }
 }
