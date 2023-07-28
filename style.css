@@ -28,11 +28,9 @@
     box-sizing: border-box;
 }
 .wrapper-bgr{
-    background-image: url(./assets/img/welcome-bgr.png);
+    background-image: url(./assets/img/bgr-welcome.png);
     background-repeat: no-repeat;
-    background-position: calc(50% + 460px);
-    background-size: contain;
-
+    background-position: center;
 }
 
 .wrapper-container {
@@ -72,6 +70,49 @@
 .nav-list:last-child{
     margin-right: 0;
 }
+
+
+.menu{
+    display: none;
+    position: relative;
+    width: 40px;
+    width: 40px;
+    background-color: #FFF;
+    border: none;
+}
+.menu span{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #272727;
+    left: 6px;
+    transition: all 0.1s ease;
+}
+.menu span:nth-child(1){
+    top: -10px;
+}
+.menu span:nth-child(2){
+}
+.menu span:nth-child(3){
+    top: 10px;
+}
+.nav-open .menu span:nth-child(1){
+    top: 0;
+    transform: rotate(45deg);
+}
+.nav-open .menu span:nth-child(2){
+    opacity: 0;
+}
+.nav-open .menu span:nth-child(3){
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+
+
 .number-call{
     margin-right: 50px;
     font-size: 20px;
@@ -893,9 +934,7 @@ footer{
     }
 }
 @media (max-width:1350px) {
-    .wrapper-bgr{
-        background-position: calc(50% + 410px);
-    }
+    
     .button-service-orange {
         padding-left: 40px;
         padding-right: 40px;
@@ -906,9 +945,7 @@ footer{
     }
 }
 @media (max-width:1315px) {
-    .wrapper-bgr{
-        background-position: calc(50% + 360px);
-    }
+   
     .step-number-text{
         max-width: 160px;
     }
@@ -921,17 +958,13 @@ footer{
 }
 
 @media (max-width:1300px) {
-    .wrapper-bgr{
-        background-position: calc(50% + 320px);
-    }
+    
     .container-text-quotes :last-child{
         padding-right: 60px;
     }
 }
 @media (max-width:1260px) {
-    .wrapper-bgr{
-        background-position: calc(50% + 320px);
-    }
+   
     .step-number-text{
         max-width: 150px;
         font-size: 16px;
@@ -1085,13 +1118,6 @@ footer{
     .wrapper-petals {
         max-width: 1100px;
     }
-    .wrapper-bgr {
-        background-position: calc(50% + 220px);
-        background-size: cover;
-    }
-    .nav-item{
-        margin-right: 20px;
-    }
     .number-call{
         margin-right: 30px;
     }
@@ -1126,16 +1152,8 @@ footer{
     }
 }
 @media (max-width:950px){
-    .nav-item{
-        font-size: 16px;
-        margin-right: 15px;
-    }
-    .number-call{
-        font-size: 18px;
-        margin-right: 20px;
-    }
     .text-stat {
-        padding: 0 50px; 
+        padding: 0 50px;
     }
     .wrapper-qoutes{
        flex-wrap: wrap;
@@ -1153,8 +1171,49 @@ footer{
     
 }
 @media (max-width:900px){
+    .menu{
+        display: block;
+    }
+    .nav-open .nav-list{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav{
+        position: relative;
+    }
+    .nav-list{
+        display: none;
+        position: absolute;
+        content: '';
+        width: 180px;
+        height: 160px;
+        top: 60px;
+        right: 0;
+        padding: 20px 30px;
+        opacity: 0;
+        visibility: hidden;
+        background-color: #FFE3DC;
+        transition: all 0.1s;
+    }
+    .nav-list::before{
+        display: block;
+        position: absolute;
+        content: '';
+        border-bottom: 10px solid #FFE3DC;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        top:-10px;
+        right: 1px;
+
+
+    }
+
+    .nav-item{
+        margin-bottom: 15px;
+    }
     .btn-call{
-        padding: 19px 25px;
+        display: none;
     }
     .text-stat {
         padding: 0 40px;
@@ -1163,7 +1222,7 @@ footer{
         width: 50px;
         height: 50px;
         font-size: 28px;
-}
+    }
     .step-number-dots {
         width: 83px;
         height: 83px;
@@ -1175,12 +1234,6 @@ footer{
     .arrow8::before{
         transform: rotate(110deg);
         left: -80px;
-    }
-    .nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        row-gap: 20px;
     }
     .btn-call{
         width: 219px;
