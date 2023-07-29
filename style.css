@@ -46,8 +46,7 @@
     padding-bottom: 10px;
 }
 .logo {
-    width: 150px;
-    height: 80px;
+    width: 10.90909090909091%;
 }
 .nav{
     display: flex;
@@ -140,7 +139,7 @@
 }
 
 .be-mommy{
-    width: 42.44444444444444%;
+    width: 50%;
     padding-top: 173px;
     padding-bottom: 172px;
 }
@@ -964,7 +963,9 @@ footer{
     }
 }
 @media (max-width:1260px) {
-   
+    .wrapper-bgr{
+        background-size: cover;
+    }
     .step-number-text{
         max-width: 150px;
         font-size: 16px;
@@ -1014,6 +1015,9 @@ footer{
     .wrapper-container{
         padding-left:20px;
         padding-right:20px;
+    }
+    .wrapper-bgr{
+        background-position: calc(50% - 50px)
     }
     .wrapper-petals{
         padding: 0 20px;
@@ -1129,6 +1133,9 @@ footer{
     }
 }
 @media (max-width:1050px){
+    .wrapper-bgr{
+        background-position: calc(50% - 80px)
+    }
     .arrow8::before{
         left: -35px;
         transform: rotate(100deg);
@@ -1141,36 +1148,16 @@ footer{
     }
     
 }
-@media (max-width:980px){
-    .step-number-border{
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
+@media (max-width:991px){
+    .wrapper-bgr{
+        background-image: none;
     }
-    .signup-container{
-        max-width: 750px;
+    .be-mommy{
+        width: 75%;
     }
-}
-@media (max-width:950px){
-    .text-stat {
-        padding: 0 50px;
+    .wrapper-petals {
+        justify-content: center;
     }
-    .wrapper-qoutes{
-       flex-wrap: wrap;
-       justify-content: space-around;
-    }
-    .container-text-quotes{
-        width: 60%;
-    }
-    .question{
-        width: 50%;
-    }
-    .quote {
-        background: linear-gradient(to right, #F3F5FF 80%, 0%, #FFF 20%);
-    }
-    
-}
-@media (max-width:900px){
     .menu{
         display: block;
     }
@@ -1205,16 +1192,43 @@ footer{
         border-right: 10px solid transparent;
         top:-10px;
         right: 1px;
-
-
     }
-
     .nav-item{
         margin-bottom: 15px;
     }
     .btn-call{
         display: none;
     }
+}
+@media (max-width:980px){
+    .step-number-border{
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+    .signup-container{
+        max-width: 750px;
+    }
+}
+@media (max-width:950px){
+    .text-stat {
+        padding: 0 50px;
+    }
+    .wrapper-qoutes{
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+    .container-text-quotes{
+        width: 60%;
+    }
+    .question{
+        width: 50%;
+    }
+    .quote {
+        background: linear-gradient(to right, #F3F5FF 80%, 0%, #FFF 20%);
+    }
+}
+@media (max-width:900px){
     .text-stat {
         padding: 0 40px;
     }
@@ -1243,6 +1257,15 @@ footer{
     }
 }
 @media (max-width:800px){
+    .logo{
+        width: 15%;
+    }
+    .be-mommy{
+        width: 85%
+    }
+    .block-button{
+        text-align: center;
+    }
     .arrow8::before{
         top: 170px;
     }
@@ -1251,5 +1274,39 @@ footer{
     }
     .text-stat{
         padding: 0 20px;
+    }
+}
+@media (max-width:600px){
+    .logo{
+        width: 20%;
+    }
+    .number-call{
+        font-size: 20px;
+    }
+    .be-mommy{
+        width: 100%;
+    }
+}
+@media (max-width:400px){
+    .logo{
+        width: 25%;
+    }
+    .number-call{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    .button-cons{
+        padding: 19px 20px;
+    }
+    .you-mother{
+        font-size: 40px;
+    }
+    .discount{
+        font-size: 18px;
+    }
+}
+@media (max-width:330px){
+    .button-cons{
+        font-size: 12px;
     }
 }
