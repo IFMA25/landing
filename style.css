@@ -175,6 +175,7 @@
     padding: 19px 30px;
 }
 .metod-eko{
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -241,6 +242,7 @@
 .steps{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     max-width: 1350px;
     column-gap: 30px;
     row-gap: 100px;
@@ -369,9 +371,7 @@
     padding-bottom: 60px;
 }
 .about-arteko{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    padding-top: 243px;
     width: 48.44444444%;
     padding-bottom: 90px;
 }
@@ -942,6 +942,9 @@ footer{
         padding-left: 50px;
         padding-right: 50px;
     }
+    .about-arteko{
+        padding-top: 210px;
+    }
 }
 @media (max-width:1315px) {
    
@@ -954,12 +957,21 @@ footer{
     .btn-question{
         padding: 18px 45px;
     }
+    .about-arteko{
+        padding-top: 200px;
+    }
 }
 
 @media (max-width:1300px) {
     
     .container-text-quotes :last-child{
         padding-right: 60px;
+    }
+    .clinic{
+        max-width: 1270px;
+    }
+    .about-arteko{
+        padding-top: 190px;
     }
 }
 @media (max-width:1260px) {
@@ -970,8 +982,11 @@ footer{
         max-width: 150px;
         font-size: 16px;
     }
-    .photo-women{
+    .photo-women {
         padding-left: 140px;
+    }
+    .nine-steps{
+        max-width: 1220px;
     }
     .arrow8::before{
         top: 30px;
@@ -1002,6 +1017,12 @@ footer{
     .nav-item{
         margin-right: 40px;
     }
+    .clinic{
+        max-width: 1220px;
+    }
+    .about-arteko{
+        padding-top: 170px;
+    }
 }
 @media (max-width:1215px) {
     .arrow{
@@ -1009,6 +1030,15 @@ footer{
     }
     .btn-question{
         padding: 18px 35px;
+    }
+    .photo-women {
+        padding-left: 110px;
+    }
+    .clinic{
+        max-width: 1185px;
+    }
+    .about-arteko{
+        padding-top: 160px;
     }
 }
 @media (max-width:1200px){
@@ -1036,17 +1066,21 @@ footer{
     .step-number-text{
         max-width: 140px;
     }
-    .photo-women{
-        padding-left: 80px;
-    }
     .arrow2:before, .arrow6:before{
         left: 70px;
     }
     .arrow1:before, .arrow3:before, .arrow5:before, .arrow7:before {
         left: 60px;
     }
-    .step-9{
-        max-width: 1150px;
+    .photo-women {
+        padding-left: 80px;
+    }
+    .about-clinic{
+        align-items: flex-end;
+    }
+    .about-arteko{
+        padding-top: 0;
+        padding-bottom: 40px;
     }
 }
 @media (max-width:1150px){
@@ -1057,29 +1091,13 @@ footer{
         max-width: 192px;
         font-size: 18px;
     }
-    .photo-women{
-        padding-left: 140px;
-    }
     .steps{
         max-width: 950px;
         justify-content: center;
         row-gap: 50px;
     }
-    .arrow2:before, .arrow4:before, .arrow6:before{
+    .arrow1:before, .arrow2:before, .arrow3:before, .arrow4:before, .arrow5:before, .arrow6:before, .arrow7:before, .arrow8::before{
         opacity: 0;
-    }
-    .arrow1:before, .arrow3:before, .arrow5:before, .arrow7:before{
-        left: 80px;
-        top: -40px;
-    }
-    .arrow8::before{
-        width: 277px;
-        height: 50px;
-        background-image: url(./assets/img/arrow.svg);
-        background-repeat: no-repeat;
-        top: 180px;
-        left: -40px;
-        transform: rotate(100deg);
     }
     .check-form-question{
         display: block;
@@ -1128,6 +1146,9 @@ footer{
     .text-stat{
         padding: 0 60px;
     }
+    .steps{
+        padding-top: 30px;
+    }
     .step-9{
         max-width: 1100px;
     }
@@ -1136,18 +1157,11 @@ footer{
     .wrapper-bgr{
         background-position: calc(50% - 80px)
     }
-    .arrow8::before{
-        left: -35px;
-        transform: rotate(100deg);
+    .about-arteko{
+        padding-bottom: 20px;
     }
 }
-@media (max-width:1020px){
-    .arrow8::before{
-        transform: rotate(90deg);
-        left: -20px;
-    }
-    
-}
+
 @media (max-width:991px){
     .wrapper-bgr{
         background-image: none;
@@ -1175,7 +1189,7 @@ footer{
         content: '';
         width: 180px;
         height: 160px;
-        top: 60px;
+        top: 50px;
         right: 0;
         padding: 20px 30px;
         opacity: 0;
@@ -1199,13 +1213,26 @@ footer{
     .btn-call{
         display: none;
     }
+    .step-9{
+        justify-content: space-around;
+    }
+    .photo-women{
+        padding-left: 0;
+    }
+    .step9-text{
+        padding-left: 0;
+    }
+    .about-clinic{
+        margin-top: 50px;
+    }
+    .about-title{
+        font-size: 32px;
+    }
+    .about-us{
+        font-size: 14px;
+    }
 }
 @media (max-width:980px){
-    .step-number-border{
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
-    }
     .signup-container{
         max-width: 750px;
     }
@@ -1229,31 +1256,35 @@ footer{
     }
 }
 @media (max-width:900px){
+   .metod-eko{
+        row-gap: 30px;
+    }
+    .diagram, .metod{
+        width: 100%;
+    }
     .text-stat {
         padding: 0 40px;
-    }
-    .step-number-border {
-        width: 50px;
-        height: 50px;
-        font-size: 28px;
-    }
-    .step-number-dots {
-        width: 83px;
-        height: 83px;
-    }
-    .arrow1:before, .arrow3:before, .arrow5:before, .arrow7:before{
-        left: 65px;
-        top: -40px;
-    }
-    .arrow8::before{
-        transform: rotate(110deg);
-        left: -80px;
     }
     .btn-call{
         width: 219px;
     }
     .photo-women {
-        padding-left: 0px;
+        width: 33%;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+    .step9-text{
+        font-size: 32px;
+    }
+    .step-9{
+        max-height: 25vw;
+        margin-top: 100px;
+    }
+    .about-title{
+        font-size: 28px;
+    }
+    .container-text-quotes{
+        padding-top: 20px;
     }
 }
 @media (max-width:800px){
@@ -1266,14 +1297,80 @@ footer{
     .block-button{
         text-align: center;
     }
-    .arrow8::before{
-        top: 170px;
+    .step9-text{
+        font-size: 30px;
+        padding-left: 20px;
     }
     .container-text-quotes{
         width: 95%;
     }
     .text-stat{
         padding: 0 20px;
+    }
+    .step-9{
+        margin-top: 80px;
+    }
+    .about-clinic{
+        position: relative;
+    }
+    .photo-petal-women{
+        position: absolute;
+        top: -80px;
+        right: 0;
+        width: 40%;
+    }
+    .about-arteko{
+        width: 80%;
+        padding-bottom: 0;
+        padding-right: 60px;
+        z-index: 50;
+    }
+    .about-title{
+        margin-bottom: 20px;
+    }
+    .about-clinic{
+        margin-top: 80px;
+    }
+    .numer-stat{
+        font-size: 28px;
+    }
+    .text-stat{
+        font-size: 14px;
+    }
+    .block-stat{
+        margin: 0;
+    }
+    .question{
+        padding-left: 0;
+    }
+    .container-text-quotes{
+        padding-bottom: 0;
+    }
+    .container-text-quotes{
+        padding-top: 0px;
+    }
+    .title-question{
+        font-size: 28px;
+    }
+    .form-entry, .form-entry-text{
+        font-size: 14px;
+    }
+    .form-entry-text{
+        padding-top: 10px;
+    }
+    .photo-director{
+        width: 35%;
+        padding-top: 100px;
+    }
+    .container-text-quotes{
+        width: 60%;
+        padding-right: 0;
+    }
+    .text-quotes{
+        padding-right: 0;
+    }
+    .text-quotes:nth-last-child(2){
+        z-index: 50;
     }
 }
 @media (max-width:600px){
@@ -1285,6 +1382,116 @@ footer{
     }
     .be-mommy{
         width: 100%;
+    }
+    .you-mother{
+        font-size: 40px;
+    }
+    .metod-eko{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .photo-women{
+        width: 40%;
+    }
+    .step9-text{
+        font-size: 26px;
+    }
+    .step-border-9{
+        width: 60px;
+        height: 60px;
+    }
+    .photo-petal-women{
+        display: none;
+    }
+    .about-arteko{
+        width: 100%;
+        padding-right: 0;
+    }
+    .photo-director{
+        padding-top: 180px;
+    }
+    .question{
+        width: 80%;
+    }
+    .text-quotes{
+        font-size: 14px;
+    }
+    .title-question{
+        font-size: 24px;
+    }
+    .btn-question{
+        font-size: 14px;
+    }
+
+}
+@media (max-width:500px){
+    .you-mother{
+        font-size: 38px;
+    }
+    .discount{
+        font-size: 18px;
+    }
+    .be-mommy{
+        padding-bottom: 100px;
+    }
+    .diagram{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .persent{
+        margin: 30px 0 30px;
+    }
+    .result{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .result div{
+        padding: 0;
+    }
+    .metod-eko{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .photo-women{
+        display: none;
+    }
+    .step-number-text{
+        font-size: 16px;
+    }
+    .step-number-border{
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+    .step-number-dots{
+        width: 85px;
+        height: 85px;
+    }
+    .steps{
+        row-gap: 30px;
+    }
+    .step-9{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .statistics{
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: center;
+    }
+    .block-stat{
+        width: 50%;
+    }
+    .photo-director{
+        width: 315px;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    .container-text-quotes{
+        width: 100%;
+    }
+    .question{
+        width: 90%;
     }
 }
 @media (max-width:400px){
@@ -1299,14 +1506,46 @@ footer{
         padding: 19px 20px;
     }
     .you-mother{
-        font-size: 40px;
+        font-size: 32px;
     }
     .discount{
-        font-size: 18px;
+        font-size: 16px;
     }
+    .metod{
+        font-size: 14px;
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .step9-text{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .step-number-text{
+        font-size: 14px;
+        max-width: 140px;
+    }
+    .block-stat{
+        width: 80%;
+    }
+    .text-stat{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
 }
-@media (max-width:330px){
+@media (max-width:350px){
+    .you-mother{
+        font-size: 28px;
+        padding-bottom: 0;
+    }
+    .discount{
+        font-size: 14px;
+    }
     .button-cons{
         font-size: 12px;
+    }
+    .text-stat{
+        max-width: 50%;
+        margin: 0 auto;
     }
 }
