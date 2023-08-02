@@ -74,39 +74,37 @@
 .menu{
     display: none;
     position: relative;
-    width: 40px;
-    width: 40px;
+    width: 46px;
+    height: 46px;
     background-color: #FFF;
     border: none;
 }
 .menu span{
     display: block;
     position: absolute;
-    top: 0;
     right: 0;
-    width: 30px;
+    top: 10px;
+    width: 35px;
     height: 2px;
     background-color: #272727;
     left: 6px;
     transition: all 0.1s ease;
 }
-.menu span:nth-child(1){
-    top: -10px;
-}
 .menu span:nth-child(2){
+    top: 22px;
 }
 .menu span:nth-child(3){
-    top: 10px;
+    top: 34px;
 }
 .nav-open .menu span:nth-child(1){
-    top: 0;
+    top: 22px;
     transform: rotate(45deg);
 }
 .nav-open .menu span:nth-child(2){
     opacity: 0;
 }
 .nav-open .menu span:nth-child(3){
-    top: 0px;
+    top: 22px;
     transform: rotate(-45deg);
 }
 
@@ -422,7 +420,7 @@
 }
 .container-text-quotes{
     width: 38.33%;
-    padding-right: 30px;
+    margin-right: 30px;
     padding-top: 57px;
     padding-bottom: 70px;
 }
@@ -432,8 +430,9 @@
     margin-bottom: 100px;
 }
 .img-quote{
-    max-width: 43px;
-    padding-bottom: 25px;
+    width: 43px;
+    height: 38px;
+    margin-bottom: 25px;
 }
 .text-quotes{
     margin-bottom: 40px;
@@ -872,7 +871,6 @@
     column-gap: 15px;
     font-size: 0;
     padding: 0 0 29px 0;
-    
 }
 .slick-dots button {
     padding: 7px;
@@ -967,10 +965,6 @@ footer{
 }
 
 @media (max-width:1300px) {
-    
-    .container-text-quotes :last-child{
-        padding-right: 60px;
-    }
     .clinic{
         max-width: 1270px;
     }
@@ -1084,6 +1078,9 @@ footer{
         padding-top: 0;
         padding-bottom: 40px;
     }
+    .photo-director{
+        width: 26.55172413793103%;
+    }
 }
 @media (max-width:1150px){
     .nav-item{
@@ -1183,7 +1180,7 @@ footer{
         content: '';
         width: 180px;
         height: 160px;
-        top: 60px;
+        top: calc(50% + 50px);
         right: 0;
         padding: 20px 30px;
         opacity: 0;
@@ -1225,10 +1222,9 @@ footer{
     .about-us, .text-review{
         font-size: 14px;
     }
-    .form-row{
-        max-width: 90%;
+    .about-us{
+        margin-bottom: 30px;
     }
-
 }
 @media (max-width:950px){
     .text-stat {
@@ -1239,14 +1235,18 @@ footer{
        justify-content: space-around;
     }
     .container-text-quotes{
-        width: 60%;
+        width: 50%;
     }
     .question{
         width: 50%;
     }
     .quote {
+        background: #F3F5FF;
         padding-bottom: 20px;
         margin-bottom: 80px;
+    }
+    .photo-director{
+        width: 50%;
     }
 }
 @media (max-width:900px){
@@ -1271,14 +1271,10 @@ footer{
         font-size: 32px;
     }
     .step-9{
-        max-height: 25vw;
         margin-top: 100px;
     }
     .about-title, .titel-review, .title-conteiner, .signup-titel{
         font-size: 28px;
-    }
-    .container-text-quotes{
-        padding-top: 20px;
     }
     .services-card{
         width: calc(50% - 30px);
@@ -1304,7 +1300,7 @@ footer{
         width: 130px;
     }
     .nav-list{
-        top: 58px;
+        top: calc(50% + 44px);
     }
     .be-mommy{
         width: 85%
@@ -1322,23 +1318,16 @@ footer{
     .text-stat{
         padding: 0 20px;
     }
-    .step-9{
-        margin-top: 80px;
-    }
     .about-clinic{
-        position: relative;
+        flex-wrap: wrap;
     }
     .photo-petal-women{
-        position: absolute;
-        top: -80px;
-        right: 0;
-        width: 40%;
+        width: 100%;
     }
     .about-arteko{
-        width: 80%;
+        width: 100%;
         padding-bottom: 0;
         padding-right: 60px;
-        z-index: 50;
     }
     .about-title{
         margin-bottom: 20px;
@@ -1354,9 +1343,6 @@ footer{
     }
     .block-stat{
         margin: 0;
-    }
-    .question{
-        padding-left: 0;
     }
     .container-text-quotes{
         padding-bottom: 0;
@@ -1374,11 +1360,10 @@ footer{
         padding-top: 10px;
     }
     .photo-director{
-        width: 35%;
-        padding-top: 100px;
+        width: 50%;
     }
     .container-text-quotes{
-        width: 60%;
+        width: 100%;
         padding-right: 0;
     }
     .text-quotes{
@@ -1387,8 +1372,8 @@ footer{
     .text-quotes:nth-last-child(2){
         z-index: 50;
     }
-    .slick-dots{
-        opacity: 0;
+    .wrapper-qoutes{
+        padding-top: 30px;
     }
     .photo-director-bgr{
         width: 50%;
@@ -1398,6 +1383,36 @@ footer{
     .signup-form{
         width: 60%;
         margin-left: 40px;
+    }
+}
+@media (max-width:650px){
+    .step-9{
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 485px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .photo-women{
+        position: absolute;
+        width: 271px;
+        height: 404px;
+        top: calc(100% + 30px);
+        padding: 0;
+    }
+    .photo-director{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .question{
+        width: 100%;
+    }
+    .title-question{
+        text-align: center;
+    }
+    .form-question{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 @media (max-width:600px){
@@ -1414,9 +1429,6 @@ footer{
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    .photo-women{
-        width: 40%;
-    }
     .step9-text{
         font-size: 26px;
     }
@@ -1424,24 +1436,21 @@ footer{
         width: 60px;
         height: 60px;
     }
-    .photo-petal-women{
-        display: none;
-    }
     .about-arteko{
         width: 100%;
         padding-right: 0;
     }
-    .photo-director{
-        padding-top: 180px;
-    }
     .question{
-        width: 80%;
+        padding-left: 0;
+    }
+    .form-question{
+        width: 100%;
     }
     .text-quotes{
         font-size: 14px;
     }
     .title-question, .signup-titel{
-        font-size: 24px;
+        font-size: 26px;
         line-height: 36px;
     }
     .btn-question{
@@ -1469,7 +1478,6 @@ footer{
     .number-call {
         margin-right: 20px;
     }
-    
     .you-mother{
         font-size: 38px;
     }
@@ -1497,9 +1505,6 @@ footer{
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    .photo-women{
-        display: none;
-    }
     .step-number-text{
         font-size: 16px;
     }
@@ -1517,7 +1522,6 @@ footer{
     }
     .step-9{
         margin-top: 30px;
-        margin-bottom: 50px;
     }
     .statistics{
         flex-wrap: wrap;
@@ -1534,9 +1538,6 @@ footer{
     }
     .container-text-quotes{
         width: 100%;
-    }
-    .question{
-        width: 90%;
     }
     .name-review{
         font-size: 14px;
@@ -1574,7 +1575,7 @@ footer{
         margin-right: 15px;
     }
     .nav-list{
-        top: 50px;
+        top: calc(50% + 36px);
     }
     .button-cons{
         padding: 19px 20px;
@@ -1590,8 +1591,12 @@ footer{
         margin-left: 0;
         padding-right: 0;
     }
+    .step-9{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
     .step9-text{
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
     }
     .step-number-text{
@@ -1631,7 +1636,7 @@ footer{
 }
 @media (max-width:350px){
     .nav-list{
-        top: 46px;
+        top: calc(50% + 33px);
     }
     .you-mother{
         font-size: 28px;
