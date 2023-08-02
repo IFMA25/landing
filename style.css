@@ -920,6 +920,10 @@ footer{
 .footer-logo{
     width: 150px;
 }
+.nav-footer{
+    display: flex;
+    align-items: center;
+}
 .nav-footer a{
     color: #FFFFFF;
 }
