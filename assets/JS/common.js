@@ -24,6 +24,7 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         }
       }
     ]
@@ -46,6 +47,7 @@ $(document).ready(function() {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          dots: false,
         }
       }
     ]
