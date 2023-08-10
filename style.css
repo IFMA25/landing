@@ -173,6 +173,7 @@
     padding: 19px 30px;
 }
 .metod-eko{
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
@@ -1372,9 +1373,6 @@ footer{
     }
 }
 @media (max-width:900px){
-   .metod-eko{
-        row-gap: 30px;
-    }
     .be-mommy{
         padding-top: 120px;
         padding-bottom: 120px;
