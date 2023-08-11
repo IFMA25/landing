@@ -1140,7 +1140,7 @@ footer{
         width: 100%;
         margin-bottom: 20px;
     }
-    .signup-agree .label-form-agree::before{
+    .label-form-agree-signup::before{
         top: -50%;
     }
     .button-question{
@@ -1180,9 +1180,6 @@ footer{
     .signup-form{
         margin-left: 50px;
         width: calc(61.57894736842105% - 50px);
-    }
-    .signup-form .form-row{
-        padding-right: 30px;
     }
 
 }
@@ -1311,6 +1308,8 @@ footer{
     .wrapper-qoutes{
        flex-wrap: wrap;
        justify-content: center;
+       margin-left: -15px;
+       margin-right: -15px;
     }
     .container-text-quotes{
         width: calc(100% - 315px - 30px);
@@ -1320,13 +1319,15 @@ footer{
         padding-right: 0;
     }
     .question{
-        position: relative;
-        width: 50%;
-        padding-left: 0;
+       /* position: relative;*/
+        width: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
+        background-color: #FFF;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    .question::before{
+   /* .question::before{
         position: absolute;
         content: '';
         left: calc(-50% - 15px);
@@ -1334,42 +1335,35 @@ footer{
         background-color: #FFF;
         width: 950px;
         height: 100%;
-    }
+    }*/
     .form-entry, .form-entry-text {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .title-question{
+    /*.title-question{
         z-index: 1;
         position: relative;
     }
     .form-question{
         position: relative;
         z-index: 1;
-    }
+    }*/
     .quote {
         background: #F3F5FF;
         margin-bottom: 80px;
     }
     .photo-director{
         width: 315px;
+        padding-right: 15px;
     }
     .photo-director-bgr{
         padding-top: 0;
     }
-}
-@media (max-width:929px){
-    .nav-footer{
-        flex-direction: column;
+    .container-text-quotes{
+        padding-left: 15px;
     }
-    .tel-number-footer>.number-call{
-        margin: 0;
-    }
-    .footer-logo{
-        padding: 0;
-    }
-    .nav-list-footer li:last-child{
-        margin: 0;
+    .label-form-agree::before{
+        top: -50%;
     }
 }
 @media (max-width:900px){
@@ -1400,6 +1394,9 @@ footer{
     }
     .signup-titel{
         padding-right: 0;
+    }
+    .label-form-agree-signup::before{
+        top: 0;
     }
     .doctor-container, .services-conteiner, .signup-container{
         padding-bottom: 50px;
@@ -1482,12 +1479,6 @@ footer{
     .step9-text{
         padding-left: 0;
     }
-    .container-text-quotes{
-        padding-bottom: 0;
-    }
-    .container-text-quotes{
-        padding-top: 0px;
-    }
     .title-question{
         font-size: 28px;
     }
@@ -1506,23 +1497,27 @@ footer{
         padding-right: 15px;
         flex-grow: 2;
     }
+    .wrapper-qoutes{
+        padding-top: 20px;
+    }
     .photo-director{
-        padding: 15px;
-        flex-grow: 1;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .container-text-quotes :last-child{
+        margin-bottom: 0;
     }
     .container-text-quotes{
         width: 100%;
         margin-right: 0;
-        padding: 0 15px;
+        padding: 0 15px 20px;
     }
     .text-quotes{
         padding-right: 0;
+        margin-bottom: 20px;
     }
     .text-quotes:nth-last-child(2){
         z-index: 50;
-    }
-    .wrapper-qoutes{
-        padding: 30px 0 0;
     }
     .photo-director-bgr{
         padding-right: 20px;
@@ -1539,6 +1534,14 @@ footer{
     .form-row{
         padding-right: 0;
     }
+    .footer-container{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .nav-footer{
+        flex-direction: column;
+    }
 }
 
 @media (max-width:650px){
@@ -1553,10 +1556,6 @@ footer{
     .title-question{
         text-align: center;
     }
-    .form-question{
-        width: 80%;
-        margin: 0 auto;
-    }
     .name-doctor{
         padding: 0;
     }
@@ -1567,7 +1566,10 @@ footer{
         text-align: center;
     }
     .signup-form{
-        width: 80%;
+        width: 100%;
+    }
+    .check-form-question .label-form-agree::before{
+        top: -50%;
     }
 }
 @media (max-width:600px){
@@ -1723,8 +1725,7 @@ footer{
     }
     .photo-director{
         width: 315px;
-        padding-top: 0;
-        padding-bottom: 30px;
+        padding: 0 20px 20px;
     }
     .container-text-quotes{
         width: 100%;
@@ -1753,6 +1754,11 @@ footer{
     }
     .title-question{
         text-align: start;
+    }
+}
+@media (max-width:515px){
+    .check-form-question .label-form-agree::before{
+        top: 0;
     }
 }
 @media (max-width:450px){
